@@ -22,11 +22,11 @@ The sign-in page has buttons for the demo accounts. They all use the password `N
 
 ## Trying it out
 
-1. Sign in as Akshata Nagaraj, a patient. She already has two results, a brain MRI and a sleep recording. Open both, and download the PDF report for one of them.
+1. Sign in as Jane Doe, a patient. She already has two results, a brain MRI and a sleep recording. Open both, and download the PDF report for one of them.
 2. Go to New analysis and pick an example scan. The result comes back in under a second. The two examples with an amber label are scans the model gets wrong. The first one is a missed tumour, and its result page shows high uncertainty, a failed stability check and an "unfamiliar scan" warning.
 3. The Sharing page shows which clinicians can see her results.
-4. Sign in as Dr. Aahana Sharma, a clinician. Her Triage page lists likely tumours first, then results the model is unsure about (the missed tumour is in this group), then routine ones. Open Akshata's glioma result, save a review, and you go back to the list.
-5. Sign in as Akshata again and the clinician's note is on her result.
+4. Sign in as Dr. John Doe, a clinician. His Triage page lists likely tumours first, then results the model is unsure about (the missed tumour is in this group), then routine ones. Open Jane's glioma result, save a review, and you go back to the list.
+5. Sign in as Jane again and the clinician's note is on her result.
 6. Sign in as Site Administrator to see the accounts and the activity log. Edit lets you rename an account, reset its password or disable it.
 7. Any account can open How the models perform, which has the test results, including the cases the models get wrong.
 
