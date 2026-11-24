@@ -1,0 +1,12 @@
+{
+  "pca_dimensions": 8,
+  "threshold": 5.796,
+  "ordinary_test_scans_flagged_percent": 3.5,
+  "test_mistakes": 11,
+  "test_mistakes_flagged": 8,
+  "upside_down_scans_flagged_percent": 16.5,
+  "inverted_brightness_scans_flagged_percent": 48.2,
+  "other_pictures": 5,
+  "other_pictures_flagged": 4,
+  "other_pictures_note": "one orbital tumour MRI found online and four charts that are not MRI scans; not redistributed"
+}

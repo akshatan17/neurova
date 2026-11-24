@@ -1,0 +1,8 @@
+# Only for retraining. The app itself needs just the top-level requirements.txt.
+torch
+efficientnet_pytorch==0.7.1
+onnx
+scikit-learn
+imagehash
+matplotlib
+mne

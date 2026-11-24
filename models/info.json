@@ -1,0 +1,75 @@
+{
+  "mri": {
+    "architecture": "EfficientNet-B0",
+    "classes": [
+      "glioma",
+      "meningioma",
+      "notumor",
+      "pituitary"
+    ],
+    "labels": [
+      "Glioma",
+      "Meningioma",
+      "No tumour",
+      "Pituitary tumour"
+    ],
+    "input_size": 192,
+    "temperature": 0.5021,
+    "trained_at": "2026-11-03T19:45:41.479260+00:00",
+    "dataset": {
+      "name": "Brain Tumor MRI Dataset (Nickparvar 2021; IEEE DataPort doi:10.21227/1jny-g144)",
+      "license": "CC BY 4.0",
+      "dedup": {
+        "images_total": 7023,
+        "unique_images": 6157,
+        "duplicate_groups": 547,
+        "images_in_duplicate_groups": 1413,
+        "groups_spanning_official_train_and_test": 303,
+        "groups_with_conflicting_labels_dropped": 0
+      },
+      "split_counts": {
+        "train": {
+          "glioma": 1134,
+          "meningioma": 1068,
+          "notumor": 889,
+          "pituitary": 1218
+        },
+        "val": {
+          "glioma": 243,
+          "meningioma": 229,
+          "notumor": 191,
+          "pituitary": 261
+        },
+        "test": {
+          "glioma": 243,
+          "meningioma": 229,
+          "notumor": 191,
+          "pituitary": 261
+        }
+      },
+      "split": "stratified 70/15/15 after perceptual-hash de-duplication, seed 42"
+    }
+  },
+  "sleep": {
+    "architecture": "1-D CNN + bidirectional GRU",
+    "classes": [
+      "W",
+      "N1",
+      "N2",
+      "N3",
+      "REM"
+    ],
+    "sample_rate": 100,
+    "epoch_seconds": 30,
+    "sequence_length": 20,
+    "channel": "Fpz-Cz",
+    "trained_at": "2026-11-03T18:17:00.289477+00:00",
+    "dataset": {
+      "name": "Sleep-EDF Expanded, sleep-cassette (PhysioNet)",
+      "license": "ODC-By 1.0",
+      "nights": 20,
+      "subjects": 10,
+      "citation": "Kemp et al., IEEE-BME 47(9):1185-1194, 2000"
+    }
+  }
+}

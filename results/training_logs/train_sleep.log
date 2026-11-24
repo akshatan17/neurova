@@ -1,0 +1,62 @@
+18:11:35 SC4001E0-PSG.edf: 841 epochs {'W': 188, 'N1': 58, 'N2': 250, 'N3': 220, 'REM': 125}
+18:11:37 SC4002E0-PSG.edf: 1127 epochs {'W': 183, 'N1': 59, 'N2': 373, 'N3': 297, 'REM': 215}
+18:11:37 SC4011E0-PSG.edf: 293 epochs {'W': 77, 'N1': 63, 'N2': 97, 'N3': 56}
+18:11:38 SC4012E0-PSG.edf: 1186 epochs {'W': 162, 'N1': 92, 'N2': 660, 'N3': 96, 'REM': 176}
+18:11:39 SC4021E0-PSG.edf: 1025 epochs {'W': 128, 'N1': 94, 'N2': 545, 'N3': 95, 'REM': 163}
+18:11:41 SC4022E0-PSG.edf: 1009 epochs {'W': 125, 'N1': 184, 'N2': 402, 'N3': 119, 'REM': 179}
+18:11:42 SC4031E0-PSG.edf: 952 epochs {'W': 140, 'N1': 61, 'N2': 485, 'N3': 57, 'REM': 209}
+18:11:43 SC4032E0-PSG.edf: 911 epochs {'W': 136, 'N1': 45, 'N2': 400, 'N3': 131, 'REM': 199}
+18:11:45 SC4041E0-PSG.edf: 1235 epochs {'W': 200, 'N1': 166, 'N2': 620, 'N3': 53, 'REM': 196}
+18:11:46 SC4042E0-PSG.edf: 1200 epochs {'W': 185, 'N1': 137, 'N2': 514, 'N3': 94, 'REM': 270}
+18:11:47 SC4051E0-PSG.edf: 672 epochs {'W': 208, 'N1': 44, 'N2': 217, 'N3': 135, 'REM': 68}
+18:11:49 SC4052E0-PSG.edf: 1246 epochs {'W': 222, 'N1': 114, 'N2': 616, 'N3': 114, 'REM': 180}
+18:11:50 SC4061E0-PSG.edf: 843 epochs {'W': 142, 'N1': 56, 'N2': 407, 'N3': 136, 'REM': 102}
+18:11:52 SC4062E0-PSG.edf: 1016 epochs {'W': 193, 'N1': 90, 'N2': 417, 'N3': 129, 'REM': 187}
+18:11:53 SC4071E0-PSG.edf: 976 epochs {'W': 124, 'N1': 89, 'N2': 403, 'N3': 162, 'REM': 198}
+18:11:54 SC4072E0-PSG.edf: 1273 epochs {'W': 407, 'N1': 84, 'N2': 392, 'N3': 222, 'REM': 168}
+18:11:56 SC4081E0-PSG.edf: 1134 epochs {'W': 323, 'N1': 68, 'N2': 262, 'N3': 350, 'REM': 131}
+18:11:57 SC4082E0-PSG.edf: 1054 epochs {'W': 144, 'N1': 39, 'N2': 329, 'N3': 282, 'REM': 260}
+18:11:59 SC4091E0-PSG.edf: 1132 epochs {'W': 150, 'N1': 19, 'N2': 561, 'N3': 170, 'REM': 232}
+18:12:00 SC4092E0-PSG.edf: 1104 epochs {'W': 139, 'N1': 81, 'N2': 512, 'N3': 107, 'REM': 265}
+18:12:00 total {'W': 3576, 'N1': 1643, 'N2': 8462, 'N3': 3025, 'REM': 3523}
+18:12:00 subjects train [1, 2, 3, 4, 7, 8, 9] (14 nights), val [0], test [5, 6]
+18:12:00 class weights {'W': np.float32(0.98), 'N1': np.float32(1.38), 'N2': np.float32(0.62), 'N3': np.float32(1.08), 'REM': np.float32(0.94)} | 1429 training sequences
+18:12:14 ep  1/25 loss 0.960 | val acc 0.721 macro-F1 0.584 kappa 0.621 * (0.2 min)
+18:12:27 ep  2/25 loss 0.568 | val acc 0.766 macro-F1 0.621 kappa 0.690 * (0.2 min)
+18:12:40 ep  3/25 loss 0.515 | val acc 0.410 macro-F1 0.303 kappa 0.267 (0.2 min)
+18:12:52 ep  4/25 loss 0.481 | val acc 0.369 macro-F1 0.319 kappa 0.229 (0.2 min)
+18:13:04 ep  5/25 loss 0.460 | val acc 0.802 macro-F1 0.702 kappa 0.741 * (0.2 min)
+18:13:17 ep  6/25 loss 0.442 | val acc 0.766 macro-F1 0.663 kappa 0.694 (0.2 min)
+18:13:30 ep  7/25 loss 0.425 | val acc 0.794 macro-F1 0.694 kappa 0.731 (0.2 min)
+18:13:42 ep  8/25 loss 0.414 | val acc 0.777 macro-F1 0.684 kappa 0.710 (0.2 min)
+18:13:55 ep  9/25 loss 0.399 | val acc 0.835 macro-F1 0.716 kappa 0.782 * (0.2 min)
+18:14:07 ep 10/25 loss 0.406 | val acc 0.767 macro-F1 0.671 kappa 0.698 (0.2 min)
+18:14:19 ep 11/25 loss 0.396 | val acc 0.783 macro-F1 0.671 kappa 0.712 (0.2 min)
+18:14:30 ep 12/25 loss 0.388 | val acc 0.730 macro-F1 0.656 kappa 0.653 (0.2 min)
+18:14:43 ep 13/25 loss 0.386 | val acc 0.718 macro-F1 0.642 kappa 0.638 (0.2 min)
+18:14:55 ep 14/25 loss 0.376 | val acc 0.845 macro-F1 0.739 kappa 0.795 * (0.2 min)
+18:15:07 ep 15/25 loss 0.375 | val acc 0.742 macro-F1 0.666 kappa 0.668 (0.2 min)
+18:15:19 ep 16/25 loss 0.388 | val acc 0.802 macro-F1 0.709 kappa 0.742 (0.2 min)
+18:15:31 ep 17/25 loss 0.365 | val acc 0.795 macro-F1 0.716 kappa 0.735 (0.2 min)
+18:15:44 ep 18/25 loss 0.363 | val acc 0.830 macro-F1 0.740 kappa 0.778 * (0.2 min)
+18:15:56 ep 19/25 loss 0.359 | val acc 0.811 macro-F1 0.721 kappa 0.754 (0.2 min)
+18:16:08 ep 20/25 loss 0.361 | val acc 0.795 macro-F1 0.708 kappa 0.734 (0.2 min)
+18:16:20 ep 21/25 loss 0.354 | val acc 0.826 macro-F1 0.734 kappa 0.772 (0.2 min)
+18:16:32 ep 22/25 loss 0.347 | val acc 0.791 macro-F1 0.705 kappa 0.728 (0.2 min)
+18:16:44 ep 23/25 loss 0.349 | val acc 0.812 macro-F1 0.725 kappa 0.755 (0.2 min)
+18:16:57 ep 24/25 loss 0.351 | val acc 0.809 macro-F1 0.722 kappa 0.752 (0.2 min)
+18:16:57 early stop
+18:16:59 TEST acc 0.8345 macro-F1 0.7836 kappa 0.7741
+              precision    recall  f1-score   support
+
+           W      0.988     0.559     0.715       765
+          N1      0.393     0.681     0.498       304
+          N2      0.934     0.917     0.925      1657
+          N3      0.835     0.934     0.882       514
+         REM      0.842     0.963     0.898       537
+
+    accuracy                          0.835      3777
+   macro avg      0.798     0.811     0.784      3777
+weighted avg      0.875     0.835     0.838      3777
+
+18:17:00 demo EDF 2.0 h, 240 scored epochs; done

@@ -1,0 +1,19 @@
+19:04:27 7023 images {('Training', 'glioma'): 1321, ('Training', 'meningioma'): 1339, ('Training', 'notumor'): 1595, ('Training', 'pituitary'): 1457, ('Testing', 'glioma'): 300, ('Testing', 'meningioma'): 306, ('Testing', 'notumor'): 405, ('Testing', 'pituitary'): 300}
+19:04:41 dedup: {'images_total': 7023, 'unique_images': 6157, 'duplicate_groups': 547, 'images_in_duplicate_groups': 1413, 'groups_spanning_official_train_and_test': 303, 'groups_with_conflicting_labels_dropped': 0}
+19:04:41 splits: {'train': {'glioma': 1134, 'meningioma': 1068, 'notumor': 889, 'pituitary': 1218}, 'val': {'glioma': 243, 'meningioma': 229, 'notumor': 191, 'pituitary': 261}, 'test': {'glioma': 243, 'meningioma': 229, 'notumor': 191, 'pituitary': 261}}
+19:04:52 preprocessed 6157 images in 11s
+19:06:51 reused efficientnet_b0_tf: test acc 0.9881
+19:07:21 reused neurova_cnn: test acc 0.8929
+19:07:21 === training efficientnet_b0_tf_robust
+19:07:24 loaded ImageNet weights into EfficientNet-B0 (358 tensors)
+19:12:46 efficientnet_b0_tf ep  1/8  train loss 0.738 acc 0.802 | val loss 0.520 acc 0.924 macro-F1 0.925 *  (5.4 min)
+19:18:00 efficientnet_b0_tf ep  2/8  train loss 0.494 acc 0.937 | val loss 0.458 acc 0.952 macro-F1 0.954 *  (5.2 min)
+19:23:15 efficientnet_b0_tf ep  3/8  train loss 0.445 acc 0.959 | val loss 0.409 acc 0.979 macro-F1 0.979 *  (5.2 min)
+19:28:28 efficientnet_b0_tf ep  4/8  train loss 0.430 acc 0.968 | val loss 0.392 acc 0.984 macro-F1 0.984 *  (5.2 min)
+19:33:39 efficientnet_b0_tf ep  5/8  train loss 0.410 acc 0.978 | val loss 0.392 acc 0.983 macro-F1 0.983  (5.2 min)
+19:38:50 efficientnet_b0_tf ep  6/8  train loss 0.398 acc 0.981 | val loss 0.387 acc 0.983 macro-F1 0.983  (5.2 min)
+19:43:44 efficientnet_b0_tf ep  7/8  train loss 0.389 acc 0.987 | val loss 0.383 acc 0.984 macro-F1 0.984  (4.9 min)
+19:43:44 early stop
+19:45:39 efficientnet_b0_tf_robust TEST acc 0.9881 macro-F1 0.9884 AUC 0.9998 ECE 0.089->0.008 T=0.502 robustness {'noise_0.05': 0.6, 'noise_0.1': 1.0, 'blur_7': 1.0, 'brightness_0.3': 1.2}
+19:45:39 deploying efficientnet_b0_tf_robust
+19:45:41 done; deployed efficientnet_b0_tf_robust {"test_accuracy": 0.9881, "test_macro_f1": 0.9884, "test_macro_auc": 0.9998, "ece_before": 0.0887, "ece_after": 0.0084, "temperature": 0.5021, "best_val_macro_f1": 0.9839, "params_m": 4.0127, "cpu_latency_ms": 18.3782, "train_minutes": 36.3442}

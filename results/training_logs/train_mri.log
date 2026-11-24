@@ -1,0 +1,26 @@
+17:24:09 7023 images {('Training', 'glioma'): 1321, ('Training', 'meningioma'): 1339, ('Training', 'notumor'): 1595, ('Training', 'pituitary'): 1457, ('Testing', 'glioma'): 300, ('Testing', 'meningioma'): 306, ('Testing', 'notumor'): 405, ('Testing', 'pituitary'): 300}
+17:24:32 dedup: {'images_total': 7023, 'unique_images': 6157, 'duplicate_groups': 547, 'images_in_duplicate_groups': 1413, 'groups_spanning_official_train_and_test': 303, 'groups_with_conflicting_labels_dropped': 0}
+17:24:32 splits: {'train': {'glioma': 1134, 'meningioma': 1068, 'notumor': 889, 'pituitary': 1218}, 'val': {'glioma': 243, 'meningioma': 229, 'notumor': 191, 'pituitary': 261}, 'test': {'glioma': 243, 'meningioma': 229, 'notumor': 191, 'pituitary': 261}}
+17:24:43 preprocessed 6157 images in 11s
+17:24:44 === training neurova_cnn
+17:25:43 neurova_cnn ep  1/20  train loss 1.102 acc 0.569 | val loss 1.066 acc 0.658 macro-F1 0.664 *  (1.0 min)
+17:26:44 neurova_cnn ep  2/20  train loss 0.985 acc 0.643 | val loss 1.719 acc 0.459 macro-F1 0.326  (1.0 min)
+17:27:44 neurova_cnn ep  3/20  train loss 0.927 acc 0.688 | val loss 2.745 acc 0.451 macro-F1 0.332  (1.0 min)
+17:28:40 neurova_cnn ep  4/20  train loss 0.872 acc 0.722 | val loss 1.185 acc 0.587 macro-F1 0.586  (0.9 min)
+17:29:39 neurova_cnn ep  5/20  train loss 0.831 acc 0.754 | val loss 1.019 acc 0.585 macro-F1 0.594  (1.0 min)
+17:30:38 neurova_cnn ep  6/20  train loss 0.794 acc 0.772 | val loss 2.638 acc 0.227 macro-F1 0.121  (1.0 min)
+17:30:38 early stop
+17:30:49 neurova_cnn TEST acc 0.6418 macro-F1 0.6464 AUC 0.8848 ECE 0.099->0.063 T=0.812
+17:30:49 === training efficientnet_b0_tf
+17:30:49 loaded ImageNet weights into EfficientNet-B0 (358 tensors)
+17:35:45 efficientnet_b0_tf ep  1/8  train loss 0.629 acc 0.865 | val loss 0.530 acc 0.925 macro-F1 0.926 *  (4.9 min)
+17:41:22 efficientnet_b0_tf ep  2/8  train loss 0.438 acc 0.963 | val loss 0.464 acc 0.951 macro-F1 0.952 *  (5.6 min)
+17:46:18 efficientnet_b0_tf ep  3/8  train loss 0.411 acc 0.977 | val loss 0.417 acc 0.969 macro-F1 0.969 *  (4.9 min)
+17:51:14 efficientnet_b0_tf ep  4/8  train loss 0.394 acc 0.984 | val loss 0.402 acc 0.976 macro-F1 0.976 *  (4.9 min)
+17:55:59 efficientnet_b0_tf ep  5/8  train loss 0.384 acc 0.989 | val loss 0.387 acc 0.987 macro-F1 0.987 *  (4.7 min)
+18:00:55 efficientnet_b0_tf ep  6/8  train loss 0.373 acc 0.995 | val loss 0.381 acc 0.988 macro-F1 0.988 *  (4.9 min)
+18:05:47 efficientnet_b0_tf ep  7/8  train loss 0.370 acc 0.994 | val loss 0.379 acc 0.989 macro-F1 0.989 *  (4.9 min)
+18:10:44 efficientnet_b0_tf ep  8/8  train loss 0.365 acc 0.997 | val loss 0.380 acc 0.988 macro-F1 0.988  (4.9 min)
+18:11:18 efficientnet_b0_tf TEST acc 0.9881 macro-F1 0.9881 AUC 0.9998 ECE 0.078->0.008 T=0.548
+18:11:18 deploying efficientnet_b0_tf
+18:11:20 done; deployed efficientnet_b0_tf {"test_accuracy": 0.9881, "test_macro_f1": 0.9881, "test_macro_auc": 0.9998, "ece_before": 0.0782, "ece_after": 0.0078, "temperature": 0.5478, "best_val_macro_f1": 0.9892, "params_m": 4.0127, "cpu_latency_ms": 21.4701, "train_minutes": 39.9147}

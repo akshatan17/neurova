@@ -1,0 +1,34 @@
+{
+  "student_name": "Akshata",
+  "deployment_url": "https://huggingface.co/spaces/YOUR-HF-USERNAME/neurova",
+  "submission_date": "20 November 2026",
+  "tests": {
+    "api": 101,
+    "screens": 15,
+    "js_errors": 0
+  },
+  "latency": {
+    "mri_request_s": 0.12,
+    "forward_ms": 9.9
+  },
+  "costs": {
+    "inr_per_usd": 85,
+    "hf_cpu_upgrade_usd_per_hour": 0.03,
+    "monthly_hosting_inr": 1861,
+    "scans_per_hour": 120000
+  },
+  "business": {
+    "price_per_mri": 40,
+    "price_per_sleep": 250,
+    "clinic_plan_monthly": 9999,
+    "clinic_plan_studies": 400,
+    "enterprise_annual_lakh": 6,
+    "engineer_monthly_lakh": 1.5,
+    "advisor_monthly_k": 50,
+    "people_18m_lakh": 63,
+    "validation_lakh": 15,
+    "regulatory_lakh": 10,
+    "total_18m_lakh": 92,
+    "breakeven_centres": 38
+  }
+}
